@@ -1,3 +1,4 @@
+const { response } = require('express');
 const request = require('request');
 const apiOptions = {
     server: 'http://localhost:3000'
@@ -41,7 +42,7 @@ const renderTravelList = (req, res, responseBody) => {
         }
         
     );
-}
+};
 
 
 /*Get travel list view */
@@ -64,3 +65,6 @@ const travelList = (req, res) => {
     );
 };
 
+module.exports = {
+    travelList
+}
