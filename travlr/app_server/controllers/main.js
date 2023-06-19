@@ -1,13 +1,3 @@
-/*GET homepage */
-//TODO:  Stuff in comment is what I had, new stuff is for testing only.
-/*
-const index = (req, res) => {
-    res.render('index', {title: 'Travlr Getaways'});
-};
-module.exports = {
-    index
-};
-*/
 const fs = require('fs');
 // read the JSON data file
 const blogs = JSON.parse(fs.readFileSync('./data/blogs.json', 'utf8'));       // not best practice, expensive
